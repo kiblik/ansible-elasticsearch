@@ -21,7 +21,7 @@
 - name: get latest snapshot build
   uri:
     url: "{{ artifacts_url }}"
-    return_contents: true
+    return_content: true
   register: snapshots
   retries: 5
   delay: 1
